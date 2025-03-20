@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css"> 
+</head>
+<body>
+    
+    <h1 class="title">📆 Calendario Interactivo</h1>
+    <div class="calendar">
+        <div class="calendar_info">
+            <button class="calendar_prev" id="prev-month">◀</button>
+            <div class="calendar_month" id="month">Enero</div>
+            <div class="calendar_year" id="year">2025</div>
+            <button class="calendar_next" id="next-month">▶</button>
+        </div>
+    
+        <div class="calendar-week">
+            <div class="calendar_day">Lun</div>
+            <div class="calendar_day">Mar</div>
+            <div class="calendar_day">Mie</div>
+            <div class="calendar_day">Jue</div>
+            <div class="calendar_day">Vie</div>
+            <div class="calendar_day">Sab</div>
+            <div class="calendar_day">Dom</div>
+        </div>
+    
+        <div class="calendar__dates" id="dates"></div>
+    </div>
+    
+    <div class="event-form">
+        <h2>📝 Agregar Evento</h2>
+        <input type="date" id="event-date">
+        <input type="text" id="event-title" placeholder="Descripción del evento">
+        <button id="save-event">Guardar evento</button>
+    </div>
+    
+
+    <div class="event-list" id="event-list"></div>
+<script src="index.js"></script>
+
+</body>
+</html>
